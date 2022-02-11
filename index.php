@@ -45,6 +45,103 @@ $answer/=2;
 $answer-=$my_num;
 echo $answer;
 
+//Task 14
+$a=10;
+$b=3;
+echo "<br>" . ($a%$b);
+if ($a%$b==0)
+    echo "<br>Делится<br>";
+else echo "<br>Делится с остатком<br>" . ($a%$b);
+
+echo $st=pow(2,10) . "<br>";
+
+echo sqrt(245) . "<br>";
+
+$mass=array(4,2,5,19,13,0,10);
+$SUM=0;
+foreach($mass as $item)
+    $SUM+=$item**2;
+echo sqrt($SUM) . "<br>";
+
+echo round(sqrt(379),0) . " ";
+echo round(sqrt(379),1) . " ";
+echo round(sqrt(379),2) . "<br>";
+
+$mass2=array(
+    "floor" => floor(sqrt(587)),
+    "ceil" => ceil(sqrt(587)));
+
+$mass3=array(
+    4,-2,5,10,-130,0,10
+);
+$minN=$mass3[0];$maxN=$mass3[0];
+foreach($mass3 as $num)
+    echo"$num ";
+if ($minN>$num)
+    $minN=$num;
+if ($maxN<$num)
+    $maxN=$num;
+echo"<br>maximum - $maxN , minimum - $minN";
+
+
+echo "<br>" . rand(1,100) . "<br>";
+
+$mass4=array();
+for($i=0;$i<10;$i++) {
+    array_push($mass4, rand(1, 50));
+}
+
+for($i=0;$i<10;$i++) {
+    echo "$mass4[$i] ";
+}
+
+
+
+for($i=0; $i < 5;$i++)
+{
+    $a=rand(-10,10);
+    $b=rand(-100,100);
+    echo "<br>a-b=$a-$b=|" . ($a-$b) . "|=" . abs($a-$b);
+}
+
+
+$mass5=array();
+for($i=0;$i<10;$i++) {
+    array_push($mass5, rand(-5, 5));
+}
+foreach ($mass5 as &$item) {
+    echo $item . " ";
+    if($item < 0)
+        $item=abs($item);
+}
+
+
+
+$numb=rand(1,30);
+echo "<br>Number is  - $numb<br>";
+$Divisors=array();
+for($i=1;$i <= $numb;$i++)
+{
+    if($numb % $i==0){
+        array_push($Divisors, $i);
+        echo $i . " ";
+    }
+}
+
+
+$mass6=array( 1,2,3,4,5,6,7,8,9,10 );
+$cntr=0;
+$SuM=0;
+while ($SuM < 10){
+    $SuM+=$mass6[$cntr];
+    $cntr ++;
+}
+
+
+
+
+
+
 
 
 
