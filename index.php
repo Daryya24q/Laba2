@@ -138,6 +138,14 @@ while ($SuM < 10){
 }
 
 
+//Task 15
+function printStringReturnNumber()
+{
+    echo "<br>Web2 php";
+    return 10;
+}
+echo "<br>" . $my_num=printStringReturnNumber();
+
 
 
 
