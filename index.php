@@ -147,6 +147,52 @@ function printStringReturnNumber()
 echo "<br>" . $my_num=printStringReturnNumber();
 
 
+//Task 16
+function increaseEnthusiasm($s="null")
+{
+    return $s . "!";
+}
+echo "<br>" . increaseEnthusiasm("Love Web");
+
+
+function repeatThreeTimes($s="null")
+{
+    return $s . $s . $s;
+}
+echo "<br>" . repeatThreeTimes(" Web! ");
+
+echo "<br>" . increaseEnthusiasm(repeatThreeTimes("Web lab2 "));
+
+function cut($s="null", $charsFromStart=10)
+{
+    return substr($s,0,$charsFromStart);
+}
+//echo "<br>" . cut(increaseEnthusiasm(repeatThreeTimes("Web lab2 ")), 5);
+
+function ArrayTask($arr,$endIter,$nowIter=0)
+{
+    echo $arr[$nowIter] . " ";
+    if ($nowIter < $endIter){
+        ArrayTask($arr, $endIter, ++$nowIter);
+    }else
+        return;
+}
+
+function NumSumm($num,$sum=0)
+{
+    while ($num > 0)
+    {
+        $sum+=$num%10;
+        $num/=10;
+    }
+    echo "$sum ";
+    if ($sum>9)
+        NumSumm($sum);
+    else return;
+}
+//echo NumSumm(55);
+
+
 
 
 
