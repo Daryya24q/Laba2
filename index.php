@@ -274,6 +274,41 @@ echo"<br>" . count($massx3);
 echo"<br>" . $massx3[count($massx3)-1] . " " . $massx3[count($massx3)-2];
 
 
+//Task 18
+function f($a1, $a2){
+    $sum=$a1+$a2;
+    if ($sum>10)
+        return true;
+    else return false;
+}
+
+
+function ff($b1, $b2){
+    if ($b1==$b2)
+        return true;
+    else return false;
+}
+
+
+function fff($age){
+    if($age < 10 || $age > 99)
+        echo "Number is higher";
+    else{
+        $Sum=$age %10+(($age - $age %10)/10);
+        if($Sum<10)
+            echo "Sum < 10";
+        else
+            echo "Sum > 10";
+    }
+}
+
+
+$arr=array(2, 4, 6, 8);
+if(count($arr)==3)
+    echo array_sum($arr) ."<br>";
+else
+    echo "<br>";
+
 
 
 
