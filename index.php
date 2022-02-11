@@ -193,6 +193,88 @@ function NumSumm($num,$sum=0)
 //echo NumSumm(55);
 
 
+//Task 17
+$x="";
+$massx=array();
+for($i=1;$i<7;$i++)
+{
+    $x=$x . "x";
+    array_push($massx,$x);
+    echo $massx[$i] . "<br>";
+}
+
+
+
+function arrayFill($Symbol,$var)
+{
+    $temp=array();
+    for ($i=0;$i < $var; $i++)
+    {
+        array_push($retArr,$Symbol);
+    }
+    return $temp;
+}
+
+
+
+
+$doublemass=array(
+    array(1,2,3),
+    array(4,5),
+    array(6)
+);
+function SumOfmass(array $massy){
+    $Sum=array_sum($massy);
+    foreach($massy as $child) {
+        if (is_array($child))
+            $Sum+=SumOfmass($child);
+    }
+    return $Sum;
+}
+
+
+
+$massx1=array();
+for($i=0; $i < 3; $i++){
+    for($j=0; $j < 3; $j++){
+        $massx1[$i][$j]=$i +3*$j +1;
+    }
+}
+
+
+
+$massx2=array (2, 5, 3, 9);
+$result=$massx2[0]*$massx2[1]+$massx2[2]*$massx2[3];
+echo "<br>" . $result . "<br>";
+
+
+$user=array(
+    "surname" => "Yemelyanicheva",
+    "name" => "Darya",
+    "patronymic" => "Andreevna"
+);
+foreach ($user as $str)
+    echo $str . " ";
+
+
+
+$date=array(
+    "day" => 12,
+    "month" => 2,
+    "year" => 2022
+);
+echo $date["'year'"] . "-";
+echo $date["'month'"] . "-";
+echo $date["'day'"];
+
+
+
+$massx3=array('a','b','c','d','e');
+echo"<br>" . count($massx3);
+echo"<br>" . $massx3[count($massx3)-1] . " " . $massx3[count($massx3)-2];
+
+
+
 
 
 
