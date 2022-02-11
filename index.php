@@ -311,6 +311,15 @@ else
 
 
 
+//Task 19
+$piramid="";
+echo "<br>";
+for($i=0;$i<20;$i++)
+{
+    $piramid .="x";
+    echo "$piramid<br>";
+}
+
 
 
 
