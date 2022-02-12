@@ -321,6 +321,45 @@ for($i=0;$i<20;$i++)
 }
 
 
+//Task 20
+$massz=array(4, 16, 71, 2, 35);
+function FunMass (array $mass , $Num=0, $Sum=0){
+    if($Num < count($mass) - 1)
+        FunMass($mass, $Num+1, $Sum+$mass[$Num]);
+    if($Num==count($mass) - 1)
+        echo ($Sum+$mass[$Num])/$Num;
+}
+FunMass (massz, 0, 0);
+
+function funNumbers($Num=1, $Sum=1){
+    if($Num<100)
+        funNumbers(Num+1, $Sum+$Num);
+    if($Num==100)
+        echo $Sum+$Num;
+}
+funNumbers();
+
+
+
+function massq (array &$mass, $Num=0){
+    if($Num < count($mass)){
+        $mass[$Num]=sqrt($mass[$Num]);
+        echo $mass[Num] ." ";
+        massq($mass, Num+1);
+    }
+}
+
+$alphabet=array ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z');
+$newAlphabet=array();
+function NewAlph(array &$New, array $abc, $Num){
+    if($Num<26){
+        $New["'abc[$Num]'"]=$Num + 1;
+        NewAlph($New, $abc, Num+1);
+    }
+}
+
+$line='1234567890';
+$line=array_sum(str_split($line, 2));
 
 
 
